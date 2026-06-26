@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeddingVerse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/wedding.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Groom ❤️ Bride</h1>
+
+            <p>
+                Together With Their Families
+                Invite You To Celebrate Their Wedding
+            </p>
+
+            <h2>23 April 2027</h2>
+
+            <button onclick="startWedding()">
+                💍 View Invitation
+            </button>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="couple-section">
+
+        <h2>💍 Two Hearts, One Beautiful Journey</h2>
+
+        <p class="invite-message">
+            Every love story is special, but ours is our favorite.
+            As we begin this new chapter together, your presence,
+            blessings, and smiles will make our celebration complete.
+        </p>
+
+        <div class="couple-cards">
+
+            <div class="person-card">
+
+                <img src="images/groom.jpg" alt="Groom">
+
+                <h3>Groom</h3>
+
+                <p>
+                    Ready to begin forever with the love of his life.
+                </p>
+
+            </div>
+
+            <div class="heart-center">
+                ❤️
+            </div>
+
+            <div class="person-card">
+
+                <img src="images/bride.jpg" alt="Bride">
+
+                <h3>Bride</h3>
+
+                <p>
+                    Excited to start a lifetime of love, laughter and happiness.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- LOVE STORY -->
+    <section class="story">
+
+        <h2>❤️ Our Story</h2>
+
+        <div class="story-container">
+
+            <div class="story-card">
+                <h3>✨ First Meeting</h3>
+                <p>
+                    The beginning of a beautiful journey.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h3>☕ Friendship</h3>
+                <p>
+                    Countless conversations and memories.
+                </p>
+            </div>
+
+            <div class="story-card">
+                <h3>💍 Proposal</h3>
+                <p>
+                    The moment forever began.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="family-intro">
+
+        <h2>
+            👨‍👩‍👧‍👦 Meet Our Families
+        </h2>
+
+        <p class="family-quote">
+            "Two families, one bond, countless blessings."
+        </p>
+
+        <div class="family-container">
+
+            <!-- Groom Family -->
+
+            <div class="family-card">
+
+                <img
+                    src="images/groom-family.jpg"
+                    alt="Groom Family"
+                >
+
+                <h3>
+                    Groom's Family
+                </h3>
+
+                <p>
+                    With love, traditions, and blessings,
+                    we welcome you to celebrate this
+                    beautiful occasion with us.
+                </p>
+
+            </div>
+
+            <!-- Bride Family -->
+
+            <div class="family-card">
+
+                <img
+                    src="images/bride-family.jpg"
+                    alt="Bride Family"
+                >
+
+                <h3>
+                    Bride's Family
+                </h3>
+
+                <p>
+                    Together we celebrate not only
+                    a wedding but the joining of two
+                    wonderful families.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- FAMILY SLIDER -->
+    <section class="families">
+
+        <h2>👨‍👩‍👧‍👦 Families United By Love</h2>
+
+        <p>
+            Two families, one beautiful celebration
+        </p>
+
+        <div class="slider">
+
+            <div class="slide-track">
+
+                <img src="images/family1.jpg">
+                <img src="images/family2.jpg">
+                <img src="images/family3.jpg">
+                <img src="images/family4.jpg">
+                <img src="images/family5.jpg">
+                <img src="images/family6.jpg">
+
+                <!-- Duplicate -->
+
+                <img src="images/family1.jpg">
+                <img src="images/family2.jpg">
+                <img src="images/family3.jpg">
+                <img src="images/family4.jpg">
+                <img src="images/family5.jpg">
+                <img src="images/family6.jpg">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="guest-message">
+
+        <h2>✨ A Seat Has Been Reserved For You ✨</h2>
+
+        <p>
+        A wedding becomes truly memorable when shared with the people
+        who have touched our lives.
+
+        We warmly invite you to join us, celebrate with us,
+        laugh with us, and bless us as we begin our forever journey.
+
+        Your presence will be the greatest gift of all.
+        </p>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown">
+
+        <h2>⏳ Countdown To Forever</h2>
+
+        <div id="timer">
+
+            <div>
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+
+            <div>
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+        <!-- EVENTS TIMELINE -->
+
+    <section class="events">
+
+        <h2>✨ Wedding Celebrations</h2>
+
+        <div class="event-timeline">
+
+            <div class="event-card left">
+                <h3>🌿 Mehendi</h3>
+                <p>22 April 2027</p>
+                <span>10:00 AM</span>
+            </div>
+
+            <div class="event-card right">
+                <h3>🎶 Sangeet</h3>
+                <p>22 April 2027</p>
+                <span>7:00 PM</span>
+            </div>
+
+            <div class="event-card left">
+                <h3>💍 Wedding Ceremony</h3>
+                <p>23 April 2027</p>
+                <span>9:00 AM</span>
+            </div>
+
+            <div class="event-card right">
+                <h3>🎉 Reception</h3>
+                <p>24 April 2027</p>
+                <span>6:00 PM</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- VENUES -->
+
+    <section class="venue">
+
+        <h2>📍 Event Venues</h2>
+
+        <div class="venue-container">
+
+            <!-- Wedding Venue -->
+
+            <div class="venue-card">
+
+                <div class="venue-image">
+                    <img src="images/wedding-venue.jpg" alt="Wedding Venue">
+                </div>
+
+                <div class="venue-info">
+
+                    <h3>💍 Wedding Ceremony</h3>
+
+                    <h4>Balaji Convention Hall</h4>
+
+                    <p>Gubbi, Karnataka</p>
+
+                    <p>
+                        23 April 2027 • 9:00 AM
+                    </p>
+
+                    <a
+                        href="https://maps.app.goo.gl/MugGVjzWtvJ3Mprv8"
+                        target="_blank"
+                        class="map-btn">
+
+                        📍 Open Maps
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Reception Venue -->
+
+            <div class="venue-card">
+
+                <div class="venue-image">
+                    <img src="images/reception-venue.jpg" alt="Reception Venue">
+                </div>
+
+                <div class="venue-info">
+
+                    <h3>🎉 Reception</h3>
+
+                    <h4>Nirvigna Conventional Centre</h4>
+
+                    <p>Varthur, Bengaluru</p>
+
+                    <p>
+                        24 April 2027 • 6:00 PM
+                    </p>
+
+                    <a
+                        href="https://maps.app.goo.gl/wZuLTZk6KXmCWAbP8"
+                        target="_blank"
+                        class="map-btn">
+
+                        📍 Open Maps
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- GALLERY -->
+
+    <section class="gallery">
+
+        <h2>📸 Captured Moments</h2>
+
+        <p>
+            Every picture tells a story of love, laughter and togetherness.
+        </p>
+
+        <div class="gallery-grid">
+
+            <img src="images/gallery1.jpg" onclick="openImage(this.src)">
+            <img src="images/gallery2.jpg" onclick="openImage(this.src)">
+            <img src="images/gallery3.jpg" onclick="openImage(this.src)">
+            <img src="images/gallery4.jpg" onclick="openImage(this.src)">
+            <img src="images/gallery5.jpg" onclick="openImage(this.src)">
+            <img src="images/gallery6.jpg" onclick="openImage(this.src)">
+            <img src="images/gallery7.jpg" onclick="openImage(this.src)">
+            <img src="images/gallery8.jpg" onclick="openImage(this.src)">
+
+        </div>
+
+    </section>
+
+    <!-- IMAGE MODAL -->
+
+    <div id="imageModal" class="image-modal">
+
+        <span onclick="closeImage()">
+            ✖
+        </span>
+
+        <img id="fullImage">
+
+    </div>
+
+    <div class="section-divider"></div>
+
+    <section class="rsvp">
+
+        <h2>💌 RSVP</h2>
+
+        <p>
+            We would be delighted by your presence.
+        </p>
+
+        <div class="rsvp-card">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+            >
+
+            <input
+                type="tel"
+                placeholder="Phone Number"
+            >
+
+            <select>
+
+                <option>
+                    Will You Attend?
+                </option>
+
+                <option>
+                    Yes, With Pleasure ❤️
+                </option>
+
+                <option>
+                    Sorry, Can't Attend
+                </option>
+
+            </select>
+
+            <button onclick="sendWish()">
+                Send Wishes 💍
+            </button>
+
+        </div>
+
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="blessing">
+
+        <div class="blessing-content">
+
+            <h2>
+                ✨ Two Hearts, One Journey ✨
+            </h2>
+
+            <p>
+                Love brought us together.
+                Friendship made us stronger.
+                Marriage begins a beautiful new chapter.
+            </p>
+
+            <h3>
+                Thank You For Being Part Of Our Story ❤️
+            </h3>
+
+            <button onclick="celebrateWedding()">
+                🎉 Celebrate With Us
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
